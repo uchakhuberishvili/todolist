@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(70, 37, 85);
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+        .to {
+            grid-column: 3 / 6;
+            grid-row: 1 / 2;
+            font-size: 50px;
+            margin: 10px 0;
+            color: #04aed8;
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.664);
+        }
+        img {
+            grid-column: 4 / 6;
+            grid-row: 2 / 6;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border: 10px solid rgb(11, 11, 68);
+        }
+        .section {
+            background-color: rgb(130, 125, 194);
+            margin: 10px;
+            padding: 10px;
+            border: 10px solid rgb(7, 32, 7);
+            border-radius: 10px;
+            grid-column: 1 / 4;
+        }
+        h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: rgb(92, 58, 27);
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: square;
+            margin: 10px 0;
+            padding: 0;
+            font-size: 18px;
+        }
+        h1 {
+            padding-left: 10px;
+            padding-right: 5px;
+            border: 8px black solid;
+            border-radius: 10px;
+            width: 250px;
+            height: 60px;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #3a056b;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .download-button:hover {
+            background-color: #4332da;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="to">To Do List</h1>
+    
+    <div class="section" style="grid-row: 2 / 3;">
+        <h2>Why Use a To Do List?</h2>
+        <p>A To Do List is an essential tool for managing tasks effectively. It helps you stay organized, prioritize your work, and track your progress. By breaking down your tasks into manageable items, you can ensure nothing is forgotten and reduce stress by visualizing your workload.</p>
+    </div>
+
+    <div class="section" style="grid-row: 3 / 4;">
+        <h2>Features of Our To Do List Application</h2>
+        <p>Our To Do List application offers a user-friendly interface with the following features:</p>
+        <ul>
+            <li>Simple and intuitive task management</li>
+            <li>Easy task addition and editing</li>
+            <li>Task prioritization and categorization</li>
+            <li>Progress tracking and reminders</li>
+        </ul>
+    </div>
+    <!-- <div class="section" style="grid-row: 4 / 5;">
+        <h2>Get Started</h2>
+        <p>To start using our To Do List application, simply add your tasks, set priorities, and begin managing your day efficiently. It’s designed to help you achieve your goals and stay productive.</p>
+    </div> -->
+
+    <div class="section" style="grid-row: 4 / 5;">
+        <h2>Download the To Do List Application</h2>
+        <p>Click the button below to download the To Do List application and start organizing your tasks more effectively!</p>
+        <a href="todotask.exe" class="download-button" download>Download Now</a>
+    </div>
+    <img src="Screenshot 2024-08-06 211703.png" alt="To Do List Image">
+</body>
+</html>
